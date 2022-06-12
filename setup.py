@@ -9,7 +9,7 @@ INSTALL_REQUIRES = (
 
 setup(
     name='road_collisions_base',
-    version='0.0.1',
+    version='0.0.22',
     python_requires='>=3.6',
     description='Road collision base',
     author='Robert Lucey',

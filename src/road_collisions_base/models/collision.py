@@ -35,6 +35,13 @@ class Collisions(GenericObjects):
 
         return collisions
 
+    def filter_within_bbox(self, bbox):
+        return Collisions(
+            data=[
+                d for d in self if d.is_within(bbox)
+            ]
+        )
+
     def filter(self, **kwargs):
         '''
         By whatever props that exist
